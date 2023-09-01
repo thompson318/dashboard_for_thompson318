@@ -42,7 +42,7 @@ if __name__ == "__main__":
             "Watchers",
             "Contributors",
         ]
-        available_badges = check_available_badges()
+        available_badges = check_available_badges(inclusion_policy=0.3)
         available_metrics.extend(
             [
                 metric_dictionary[available_badges[i]]
