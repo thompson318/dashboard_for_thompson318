@@ -117,6 +117,8 @@ if __name__ == "__main__":
                 weeks_up = int(time_up.days / 7)
             except ValueError:
                 pass
+            except TypeError as e:
+                print ("got ", e , " with " , datetime.now(), " and " , datetime.fromisoformat(str(first_release)), " from " , first_release)
 
             weeks_up_badge = None
             weeks_up_target = None
